@@ -1,0 +1,32 @@
+{
+  "name": "ppc",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Личный проект",
+  "author": "Евгений Бервяченок",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fiendjk/ppc.world.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fiendjk/ppc.world/issues"
+  },
+  "homepage": "https://github.com/fiendjk/ppc.world",
+  "devDependencies": {
+    "autoprefixer": "6.3.6",
+    "editorconfig-tools": "0.1.1",
+    "grunt": "1.0.1",
+    "grunt-browser-sync": "2.2.0",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-postcss": "0.8.0",
+    "grunt-contrib-less": "1.3.0"
+  },
+  "scripts": {
+    "test": "editorconfig-tools check *",
+    "build": "grunt less && grunt postcss",
+    "start": "npm run build && grunt serve"
+  },
+  "engines": {
+    "node": "5.11"
+  }
+}
