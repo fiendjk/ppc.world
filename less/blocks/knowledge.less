@@ -1,0 +1,50 @@
+.knowledge {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  @media (max-width: 600px) {
+    padding-top: 15px;
+    position: static;
+  }
+}
+
+.knowledge__text {
+  padding-right: 5px;
+  @media (max-width: 450px) {
+    display: block;
+    padding-bottom: 10px;
+  }
+}
+
+.knowledge__choice {
+  font-size: 18px;
+  @media (max-width: 1189px) {
+    font-size: 14px;
+  }
+  &:not(:first-of-type) {
+    margin-left: 41px;
+    @media (max-width: 1189px) {
+      margin-left: 20px;
+    }
+  }
+  &_novice {
+    color: #5ca2bd;
+  }
+  &_specialist {
+    color: #ffb500;
+  }
+  &_expert {
+    color: #00b685;
+  }
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: baseline;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    background-image: url("/img/checkbox.png");
+    background-repeat: no-repeat;
+    background-position: 0 1px;
+  }
+}

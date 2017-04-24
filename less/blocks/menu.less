@@ -1,0 +1,32 @@
+.menu {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 2;
+  padding-left: 80px;
+  @media (max-width: 859px) {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.menu__item {
+  a {
+    display: block;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
+    @media (max-width: 1189px) {
+      font-size: 14px;
+    }
+    &:hover {
+      border-bottom-color: #00b685;
+    }
+  }
+}
