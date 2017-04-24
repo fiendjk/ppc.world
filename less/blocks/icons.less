@@ -1,0 +1,28 @@
+.fa {
+  position: relative;
+  padding-left: 17px;
+  &::before {
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    left: 0;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.fa-eye::before {
+  content: "\f06e";
+}
+
+.fa-comment-o::before {
+  content: "\f0e5";
+}
+
+.fa-search:before {
+  content: "\f002";
+}

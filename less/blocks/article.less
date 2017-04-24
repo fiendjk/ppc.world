@@ -1,0 +1,116 @@
+.article {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 23px;
+  &:not(:first-of-type) {
+    padding-top: 23px;
+  }
+  & .article__name {
+    font-size: 24px;
+  }
+  @media (min-width: 1190px) {
+    width: 540px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    &:first-of-type {
+      border-right: 1px solid #e7e7e7;
+    }
+    &:nth-of-type(2n) {
+      width: 281px;
+      margin-left: auto;
+      & .article__name {
+        font-size: 18px;
+      }
+      & .article__details {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        height: 50px;
+      }
+      & .article__date {
+        order: 10;
+        margin-top: auto;
+      }
+      & .article__knowledge-icon {
+        order: 10;
+      }
+      & .author {
+        margin-right: 5px;
+      }
+      & .fa {
+        display: none;
+      }
+    }
+  }
+}
+
+.article__image {
+  @media (max-width: 1189px) {
+    width: 100%;
+  }
+}
+
+.article__name {
+  display: block;
+  line-height: 20px;
+  padding: 8px 0 0;
+}
+
+.article__description {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323d46;
+  padding: 8px 0 12px;
+}
+
+.article__knowledge-icon {
+  display: block;
+  width: 34px;
+  height: 34px;
+  &_two {
+    background: url("/img/diff-2.svg") no-repeat;
+    background-size: 34px;
+    margin-right: 10px;
+  }
+  &_three {
+    background: url("/img/diff-3.svg") no-repeat;
+    background-size: 29px;
+  }
+}
+
+.article__info {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+}
+
+.article__date {
+  margin-right: 10px;
+}
+
+.article__category {
+  padding: 0 11px;
+  color: #fff;
+  margin-right: 10px;
+  &_art {
+    background-color: #888;
+  }
+  &_news {
+    background-color: #ccc;
+  }
+}
+
+.article__views-counter {
+  margin-right: 16px;
+}
+
+.article__knowledge-icon, .article__views-counter, .article__comments-counter {
+  @media (max-width: 440px) {
+    display: none;
+  }
+}
